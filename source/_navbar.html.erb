@@ -1,25 +1,18 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <% link_to "/", class: "navbar-wagon-brand" do %>
-    <%= image_tag "lewagon.png" %>
+    vanGriffin
   <% end %>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <!-- Search form -->
-    <form action="" class="navbar-wagon-search">
-      <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
-      <button type="submit" class="navbar-wagon-search-btn">
-        <i class="fa fa-search"></i>
-      </button>
-    </form>
 
     <!-- Text link -->
-    <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link">Wagon</a>
+    <% link_to "home.html", class: "navbar-wagon-item navbar-wagon-link" do %>Home<% end %>
 
     <!-- Text link -->
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Team</a>
+    <% link_to "about.html", class: "navbar-wagon-item navbar-wagon-link" do %>About<% end %>
 
     <!-- Notification link-->
     <a href="" class="navbar-wagon-item navbar-wagon-link">
@@ -42,7 +35,7 @@
     </div>
 
     <!-- Button (call-to-action) -->
-    <a href="" class="navbar-wagon-item navbar-wagon-button btn">Post stuff</a>
+    <% link_to "contact.html", class: "navbar-wagon-item" do %>Contact<% end %>
   </div>
 
   <!-- Dropdown appearing on mobile only -->
@@ -50,9 +43,21 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
+        <li>
+          <% link_to "/", class: "navbar-wagon-brand" do %>
+            Home
+          <% end %>
+        </li>
+        <li>
+          <% link_to "about.html", class: "navbar-wagon-brand" do %>
+            About
+          <% end %>
+        </li>
+        <li>
+          <% link_to "contact.html", class: "navbar-wagon-brand" do %>
+          Contact
+          <% end %>
+        </li>
       </ul>
     </div>
   </div>
