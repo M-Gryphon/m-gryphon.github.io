@@ -1,6 +1,6 @@
 <div class="navbar-wagon">
   <!-- Logo -->
-  <% link_to "/", class: "navbar-wagon-brand" do %>
+  <% link_to "/", class: "navbar-wagon-brand navbar-wagon-link" do %>
     vanGriffin
   <% end %>
 
@@ -14,28 +14,8 @@
     <!-- Text link -->
     <% link_to "about.html", class: "navbar-wagon-item navbar-wagon-link" do %>About<% end %>
 
-    <!-- Notification link-->
-    <a href="" class="navbar-wagon-item navbar-wagon-link">
-      <div class="badge-container">
-        <i class="fa fa-envelope-o"></i>
-        <div class="badge badge-blue">3</div>
-      </div>
-    </a>
-
-    <!-- Profile picture and dropdown -->
-    <div class="navbar-wagon-item">
-      <div class="dropdown">
-        <img src="http://placehold.it/50x50" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
-        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Log Out</a></li>
-        </ul>
-      </div>
-    </div>
-
     <!-- Button (call-to-action) -->
-    <% link_to "contact.html", class: "navbar-wagon-item" do %>Contact<% end %>
+    <% link_to "contact.html", class: "navbar-wagon-item navbar-wagon-link" do %>Contact<% end %>
   </div>
 
   <!-- Dropdown appearing on mobile only -->
