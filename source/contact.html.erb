@@ -3,18 +3,24 @@
   <!--Define a container-->
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-md-6">
+
         <!--Define a container-->
         <div class="welcome text-center padded">
-          <h1>Full Stack Web Developer</h1>
-          <p class="doc">
-            <%= link_to "Contact me <br> Email: mr.gregory.griffin@gmail.com", "http://middlemanapp.com/" %>
-
-          </p>
+          <h1>Contact me</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae perferendis neque dicta veniam! Ea a illo vero laboriosam dignissimos aliquid eveniet nostrum adipisci veniam minus, commodi sint perferendis facilis consectetur.</p>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6">
-
+      <div class="col-md-6">
+        <h3>Send me a message</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, aperiam. Officiis optio, eaque rem dolores, accusantium qui. Ad tempore, tenetur sint repellendus, obcaecati sit? Nulla officiis tempore in voluptas temporibus!</p>
+        <form action="https://formspree.io/mr.gregory.griffin@gmail.com"
+        method="POST">
+          <input type="text" name="name" placeholder="Your name">
+          <input type="email" name="email" placeholder="Your email">
+          <textarea name="message" placeholder="Your message"></textarea>
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
   </div>
