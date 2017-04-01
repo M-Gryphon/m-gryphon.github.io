@@ -31,3 +31,8 @@ background: linear-gradient(to left, #4B79A1 , #283E51); /* W3C, IE 10+/ Edge, F
 
 color: $gray-lighter;
 }
+
+.card {
+  border: 2px solid red;
+  margin: 5px auto 0px;
+}
