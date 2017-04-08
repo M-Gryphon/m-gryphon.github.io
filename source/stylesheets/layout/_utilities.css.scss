@@ -6,8 +6,8 @@
 
 // Paddings
 .padded {
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 4em;
+  padding-bottom: 1em;
 }
 
 // Backgrounds
@@ -30,17 +30,29 @@
 }
 
 body {
-background: #4B79A1; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #4B79A1 , #283E51); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #4B79A1 , #283E51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-color: $gray-lighter;
+  background: #4B79A1; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4B79A1 , #283E51); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4B79A1 , #283E51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: $gray-lighter;
 }
 
 figcaption {
-  padding: 10px;
+padding: 10px;
 }
 
-.container {
+/* .container {
   width: 100%;
-}
+} */
+
+/* Extra small devices (phones, less than 768px)
+No media query since this is the default in Bootstrap
+
+Small devices (tablets, 768px and up)
+@media (min-width: @screen-sm-min) { ... }
+
+Medium devices (desktops, 992px and up)
+@media (min-width: @screen-md-min) { ... }
+
+Large devices (large desktops, 1200px and up)
+@media (min-width: @screen-lg-min) { ... }
+ */
