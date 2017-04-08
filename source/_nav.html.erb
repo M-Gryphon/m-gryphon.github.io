@@ -1,0 +1,58 @@
+<nav class="navbar-portfolio navbar-fixed-top">
+  <!-- Logo -->
+  <% link_to "/", class: "navbar-portfolio-brand navbar-portfolio-link" do %>
+    vanGriffin
+  <% end %>
+
+  <!-- Right Navigation -->
+  <div class="navbar-portfolio-right hidden-xs hidden-sm">
+    <ul>
+      <li><!-- Text link -->
+        <% link_to "index.html", class: "navbar-portfolio-item navbar-portfolio-link" do %>Home<% end %>
+      </li>
+      <li>
+        <!-- Text link -->
+        <% link_to "about.html", class: "navbar-portfolio-item navbar-portfolio-link" do %>About<% end %>
+      </li>
+      <li>
+       <!-- Text link -->
+       <% link_to "portfolio.html", class: "navbar-portfolio-item navbar-portfolio-link" do %>Portfolio<% end %>
+      </li>
+      <li>
+      <!-- Text link -->
+      <% link_to "contact.html", class: "navbar-portfolio-item navbar-portfolio-link" do %>Contact<% end %>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-portfolio-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-portfolio-dropdown-menu">
+        <li>
+          <% link_to "/", class: "navbar-portfolio-brand" do %>
+            Home
+          <% end %>
+        </li>
+        <li>
+          <% link_to "about.html", class: "navbar-portfolio-brand" do %>
+            About
+          <% end %>
+        </li>
+        <li>
+          <% link_to "portfolio.html", class: "navbar-portfolio-brand" do %>
+            Portfolio
+          <% end %>
+        </li>
+        <li>
+          <% link_to "contact.html", class: "navbar-portfolio-brand" do %>
+          Contact
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+

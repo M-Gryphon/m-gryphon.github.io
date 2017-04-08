@@ -1,0 +1,35 @@
+/* Main class */
+footer {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background: black;
+  transition: all 0.3s ease;
+  display: flex;
+  height: 60px;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Footer right section (with form, links, button) */
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Footer item */
+.footer-item {
+  flex: 0 1 auto;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+/* Footer standard link */
+.footer-link {
+  color: $gray-lighter;
+  font-size: 14px;
+}
+.footer-link:hover {
+  color: $body-bg;
+  text-decoration: none;
+}
