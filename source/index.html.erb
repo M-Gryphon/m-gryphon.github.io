@@ -6,24 +6,40 @@ title: Portfolio 2017
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12">
+      <br>
+      <br>
         <h1>Full Stack Developer</h1>
+        <br>
         <hr>
-        <h2>
-          <%= link_to "About", "about.html" %>
-        </h2>
-        <i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i>
-        <hr>
-        <h2>
-          <%= link_to "Portfolio", "portfolio.html" %>
-        </h2>
-        <i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i>
-        <hr>
-        <h2>
-          <%= link_to "Contact", "contact.html" %>
-        </h2>
-        <i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i>
+        <ul class="list-unstyled">
+          <li class="h2">
+            <!-- Text link -->
+            <% link_to "about.html", class: "index-flex-box" do %>
+            <i class="fa fa-file-code-o index-flex-item" aria-hidden="true"></i>
+            About
+            <i class="fa fa-chevron-circle-right index-flex-item" aria-hidden="true"></i>
+            <% end %>
+          </li>
+          <hr>
+          <li class="h2">
+            <!-- Text link -->
+            <% link_to "portfolio.html", class: "index-flex-box" do %>
+            <i class="fa fa-laptop index-flex-item" aria-hidden="true"></i>
+            Portfolio
+            <i class="fa fa-chevron-circle-right index-flex-item" aria-hidden="true"></i>
+            <% end %>
+          </li>
+          <hr>
+          <li class="h2">
+            <!-- Text link -->
+            <% link_to "contact.html", class: "index-flex-box" do %>
+            <i class="fa fa-envelope-o index-flex-item" aria-hidden="true"></i>
+            Contact
+            <i class="fa fa-chevron-circle-right index-flex-item" aria-hidden="true"></i>
+            <% end %>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
-

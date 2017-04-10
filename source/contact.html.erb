@@ -5,24 +5,34 @@
     <div class="row">
       <div class="col-xs-12 col-sm-6">
         <h1>Contact</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <p class="lead">griffin@example.com</p>
-        <ul class="list-inline">
-          <li>
-            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur.</p>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur.</p>
+        <p class="lead"><% link_to "/" do %>griffin@example.com<% end %></p>
+        <ul class="list-unstyled contact-flex-box">
+          <li class="h3 contact-flex-item">
+            <!-- Text link -->
+            <% link_to "https://www.linkedin.com/in/gregoryvangriffin/" do %>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <% end %>
           </li>
-          <li><i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+          <li class=" h3 contact-flex-item">
+            <!-- Text link -->
+            <% link_to "https://twitter.com/M_Gryphonn" do %>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <% end %>
           </li>
-          <li><i class="fa fa-github fa-2x" aria-hidden="true"></i>
+          <li class="h3 contact-flex-item">
+            <!-- Text link -->
+            <% link_to "https://github.com/m-gryphon" do %>
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <% end %>
           </li>
         </ul>
-        <br>
       </div>
       <div class="col-xs-12 col-sm-6">
         <h3>Send me a message</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, aperiam. Officiis optio, eaque rem dolores, accusantium qui. Ad tempore, tenetur sint repellendus, obcaecati sit? Nulla officiis tempore in voluptas temporibus!</p>
         <br>
-
         <!--Contact form-->
         <form action="https://formspree.io/mr.gregory.griffin@gmail.com"
         method="POST">
@@ -40,6 +50,7 @@
         </div>
         <button style="background: rgba(0,0,0,0.3);" class="btn btn-primary" type="submit">Send message</button>
         </form>
+        <br>
       </div>
     </div>
   </div>
