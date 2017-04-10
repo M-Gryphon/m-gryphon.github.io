@@ -3,11 +3,21 @@
  * These are examples of utilities classes
  * Feel free to change them and create your own
  * ------------------------------------- */
+body {
+  background: #4B79A1; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4B79A1 , #283E51); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4B79A1 , #283E51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: $gray-lighter;
+}
+
+figcaption {
+padding: 10px;
+}
 
 // Paddings
 .padded {
   padding-top: 4em;
-  padding-bottom: 1em;
+  padding-bottom: 0.75em;
 }
 
 // Backgrounds
@@ -24,22 +34,29 @@
   background: #3b5998;
 }
 
-.card-portfolio {
-  border: 1px solid black;
-  margin: 5px -10px;
+/* Index-page flex-box */
+.index-flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-body {
-  background: #4B79A1; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #4B79A1 , #283E51); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #4B79A1 , #283E51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: $gray-lighter;
+/* Index-page flex-item */
+.index-flex-item {
+  flex: 0 0 auto;
 }
 
-figcaption {
-padding: 10px;
+/* Contact-page flex-box */
+.contact-flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
+/* Contact-page flex-item */
+.contact-flex-item {
+  flex: 1 0 auto;
+}
 /* .container {
   width: 100%;
 } */
