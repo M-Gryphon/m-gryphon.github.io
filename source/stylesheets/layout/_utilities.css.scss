@@ -3,6 +3,17 @@
  * These are examples of utilities classes
  * Feel free to change them and create your own
  * ------------------------------------- */
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0 0 0.75em;
+}
+
+h1:last-child, h2:last-child, h3:last-child,
+h4:last-child, h5:last-child, h6:last-child,
+p:last-child {
+    margin: 0;
+}
+
 body {
   background: #4B79A1; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #4B79A1 , #283E51); /* Chrome 10-25, Safari 5.1-6 */
@@ -57,19 +68,94 @@ padding: 10px;
 .contact-flex-item {
   flex: 1 0 auto;
 }
-/* .container {
-  width: 100%;
-} */
-
-/* Extra small devices (phones, less than 768px)
+.container {
+  width: 90%;
+}
+/*
+Extra small devices (phones, less than 768px)
 No media query since this is the default in Bootstrap
-
-Small devices (tablets, 768px and up)
-@media (min-width: @screen-sm-min) { ... }
-
-Medium devices (desktops, 992px and up)
-@media (min-width: @screen-md-min) { ... }
-
-Large devices (large desktops, 1200px and up)
-@media (min-width: @screen-lg-min) { ... }
  */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+  .banner {
+    color: red;
+    text-align: center;
+    height: 100vh;
+    /* if you have a 70px navbar => height: calc(100vh - 70px); */
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: image-url("labtop_on_table.jpeg");
+    background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%);
+     }
+  .banner h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  }
+  .banner p {
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+  }
+}
+
+// Medium devices (desktops, 992px and up)
+@media (min-width: $screen-md-min) {
+
+.banner {
+    color: orange;
+    text-align: center;
+    height: 100vh;
+    /* if you have a 70px navbar => height: calc(100vh - 70px); */
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: image-url("labtop_on_table.jpeg");
+    background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%);
+     }
+  .banner h1 {
+    font-size: 75px;
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  }
+  .banner p {
+    font-size: 50px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+  }
+
+}
+
+// Large devices (large desktops, 1200px and up)
+@media (min-width: $screen-lg-min) {
+
+.banner {
+    color: purple;
+    text-align: center;
+    height: 100vh;
+    /* if you have a 70px navbar => height: calc(100vh - 70px); */
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: image-url("labtop_on_table.jpeg");
+    background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%);
+     }
+  .banner h1 {
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  }
+  .banner p {
+    font-size: 75px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+  }
+
+}
