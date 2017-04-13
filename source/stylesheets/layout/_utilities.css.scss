@@ -25,6 +25,11 @@ figcaption {
 padding: 10px;
 }
 
+// Form font color
+.form-control {
+  color: $gray-lighter;
+}
+
 // Paddings
 .padded {
   padding-top: 4em;
