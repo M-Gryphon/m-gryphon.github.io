@@ -1,10 +1,10 @@
 /* Main class */
 .navbar-portfolio {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: black;
+  background: rgba(0,0,0,0.333);
   transition: all 0.3s ease;
   display: flex;
-  height: 60px;
+  height: $navbar-height;
   padding: 0px 30px;
   align-items: center;
   justify-content: space-between;
@@ -19,10 +19,21 @@
   width: 100%;
 }
 
-/* Navbar logo */
-.navbar-portfolio-brand img {
-  width: 50px;
+#navbar-portfolio-fixed-home {
 }
+
+/* Modal flex-box */
+.modal-flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Modal flex-item */
+.modal-flex-item {
+  flex: 0 0 auto;
+}
+
 
 /* Navbar right section (with form, links, button) */
 .navbar-portfolio-right {
@@ -41,7 +52,8 @@
 /* Navbar standard link */
 .navbar-portfolio-link {
   color: $gray-lighter;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
 }
 .navbar-portfolio-link:hover {
   color: $body-bg;
@@ -66,11 +78,54 @@
 }
 
 /* Navbar dropdown menu */
-.navbar-portfolio-dropdown-menu {
-  margin-top: 15px;
-  box-shadow: 1px 1px 4px #E6E6E6;
-  border-color: #E6E6E6;
+/* .navbar-portfolio-dropdown-menu */
+.overlay {
+  height: 100vh;
+  background: $gray-darker;
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
 }
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: white;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.nav-modal-margin {
+  margin: 10px;
+}
+
+
+
+.dropdown-menu > li > a {
+  color: $gray-lighter;
+  text-align: center;
+}
+
 .navbar-portfolio-dropdown-menu li > a {
   transition: color 0.3s ease;
   font-weight: lighter !important;
