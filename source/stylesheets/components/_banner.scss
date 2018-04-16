@@ -22,3 +22,87 @@
   margin-bottom: 20px;
 }
  */
+ /*
+Extra small devices (phones, less than 768px)
+No media query since this is the default in Bootstrap
+ */
+/* Small devices (tablets, 768px and up) */
+.banner {
+  @media (min-width: $screen-sm-min) {
+    color: $brand-primary;
+    text-align: center;
+    height: calc(100vh - #{$navbar-height});
+    /* if you have a 70px navbar => height: calc(100vh - 70px); */
+
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 50%),
+    image-url("background_earth.jpg");
+
+    h1 {
+      font-size: 75px;
+      font-weight: bold;
+      text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    p,
+    h2 {
+      font-size: 50px;
+      font-weight: lighter;
+      margin-bottom: 20px;
+    }
+
+    .btn-home {
+      color: $gray-lighter;
+      opacity: 0.6;
+      font-size: 50px;
+      font-weight: lighter;
+    }
+
+    .btn-home:hover {
+      opacity: 1;
+      text-decoration: none;
+      color: $gray-lighter;
+    }
+
+  }
+
+  // Medium devices (desktops, 992px and up)
+  @media (min-width: $screen-md-min) {
+    background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 50%),
+    image-url("background_earth.jpg");
+
+    h1 {
+      font-size: 100px;
+    }
+
+    p,
+    h2 {
+      font-size: 75px;
+
+      .btn-home {
+        color: $gray-lighter;
+        opacity: 0.6;
+        font-size: 75px;
+        font-weight: lighter;
+      }
+
+      .btn-home:hover {
+        opacity: 1;
+        text-decoration: none;
+        color: $gray-lighter;
+      }
+    }
+
+  }
+  // Large devices (large desktops, 1200px and up)
+  @media (min-width: $screen-lg-min) {
+    background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 50%),
+    image-url("background_earth.jpg");
+  }
+}
+
+
+
