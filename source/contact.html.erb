@@ -4,55 +4,63 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-6">
-        <h1>Contact</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur.</p>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur.</p>
-        <p class="lead"><% link_to "/" do %>griffin@example.com<% end %></p>
-        <ul class="list-unstyled contact-flex-box">
-          <li class="h3 contact-flex-item">
-            <!-- Text link -->
-            <% link_to "https://www.linkedin.com/in/gregoryvangriffin/" do %>
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-            <% end %>
-          </li>
-          <li class=" h3 contact-flex-item">
-            <!-- Text link -->
-            <% link_to "https://twitter.com/M_Gryphonn" do %>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <% end %>
-          </li>
-          <li class="h3 contact-flex-item">
-            <!-- Text link -->
-            <% link_to "https://github.com/m-gryphon" do %>
-            <i class="fa fa-github" aria-hidden="true"></i>
-            <% end %>
-          </li>
-        </ul>
+        <h1>Contact Me</h1>
+        <br>
+        <p class="lead">I am available for both contract and freelance work; therefore, if there is anything that I can do for you, or if you have an idea you would like to discuss, please feel free to get in touch.</p>
+        <br>
+
+        <% link_to "https://google.com", class: "" do %>
+            <!-- <i class="fa fa-envelope-o index-flex-item lead" aria-hidden="true"></i> -->
+          <p class="lead"><i class="fa fa-envelope" aria-hidden="true"></i> email@gregoryvangriffin.com</p>
+        <% end %>
+        <div class="contact-flex-box">
+          <ul class="list-unstyled contact-flex-item contact-flex-box">
+            <li class="h3 contact-flex-item">
+              <!-- Text link -->
+              <% link_to "https://www.linkedin.com/in/gregoryvangriffin/" do %>
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <% end %>
+            </li>
+            <li class="h3 contact-flex-item">
+              <!-- Text link -->
+              <% link_to "https://twitter.com/M_Gryphonn" do %>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <% end %>
+            </li>
+            <li class="h3 contact-flex-item">
+              <!-- Text link -->
+              <% link_to "https://github.com/m-gryphon" do %>
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <% end %>
+            </li>
+          </ul>
+          <div class="contact-flex-item"></div>
+        </div>
       </div>
+      <br>
       <div class="col-xs-12 col-sm-6">
-        <h3>Send me a message</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, aperiam. Officiis optio, eaque rem dolores, accusantium qui. Ad tempore, tenetur sint repellendus, obcaecati sit? Nulla officiis tempore in voluptas temporibus!</p>
+        <br>
         <br>
         <!--Contact form-->
         <form action="https://formspree.io/mr.gregory.griffin@gmail.com"
         method="POST">
-        <div class="form-group">
+        <div class="form-group-lg form-padding">
           <label for="text">Name</label>
           <input style="background: rgba(0,0,0,0.3);" id="text" class="form-control" type="text" name="name" placeholder="Your name">
         </div>
-        <div class="form-group">
+        <div class="form-group-lg form-padding">
           <label for="email">Email Address</label>
           <input style="background: rgba(0,0,0,0.3);" id="email" class="form-control" type="email" name="email" placeholder="Your email">
         </div>
-        <div class="form-group">
+        <div class="form-group-lg form-padding">
           <label for="subject">Subject</label>
           <input style="background: rgba(0,0,0,0.3);" id="subject" class="form-control" type="subject" name="subject" placeholder="Subject of your email">
         </div>
-        <div class="form-group">
-          <label for="message">Message...</label>
+        <div class="form-group-lg form-padding">
+          <label for="message">Message</label>
           <textarea style="background: rgba(0,0,0,0.3);" id="message" class="form-control" name="message" placeholder="Message..."></textarea>
         </div>
-        <button style="background: rgba(0,0,0,0.3);" class="btn btn-primary" type="submit">Send message</button>
+        <button style="background: rgba(0,0,0,0.3);" class="btn btn-primary btn-lg" type="submit">Send message</button>
         </form>
         <br>
       </div>
