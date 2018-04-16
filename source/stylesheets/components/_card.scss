@@ -1,5 +1,66 @@
+/* -------------------------------------
+ * Media Queries
+ * ------------------------------------- */
+
+ /* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* .card-portfolio {
+  heigth: 275px;
+  border: 2px solid $gray-darker;
+  background-size: cover !important;
+  color: white; */
+  /* box-shadow: 2px 2px 3px rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03); */
+
+
 .card-portfolio {
-  border: 1px solid $gray-darker;
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  margin: 5px -10px;
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-color: #EFEFEF;
+  border-radius: 2px;
+  margin-bottom: 5px;
 }
+.card-portfolio:first-child {
+  margin-top: 5px;
+}
+
+.img.img-responsive:hover {
+    background-color: #EFEFEF !important;
+}
+
+
+
+.card-description h2 {
+  font-size: 24px;
+}
+.card-description p {
+  font-size: 13px;
+  }
+/* .card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index:2;
+  background: black;
+  opacity: 0;
+} */
+.card-link:hover{
+  opacity: 0.1;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $body-bg;
+}
+
+a:visited {
+text-decoration: none;
+}
+
+/* Medium devices (desktops, 992px and up) */
+$screen-md-min: 992px;
+
+/* Large devices (large desktops, 1200px and up) */
+$screen-lg-min: 1200px;
