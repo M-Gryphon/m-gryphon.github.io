@@ -1,0 +1,16 @@
+/* Contact-page flex-box */
+.contact-flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+/* Contact-page flex-item */
+.contact-flex-item {
+  flex: 1 0 auto;
+}
+
+.form-padding {
+  margin-bottom: 10px;
+}
