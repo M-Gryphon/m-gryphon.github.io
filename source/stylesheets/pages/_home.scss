@@ -1,0 +1,15 @@
+/* Index-page flex-box */
+.index-flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Index-page flex-item */
+.index-flex-item {
+  flex: 0 0 auto;
+}
+
+ footer #hompage {
+     display: none;
+ }
