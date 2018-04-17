@@ -1,0 +1,20 @@
+.padding-portfolio {
+  //padding-top: 100px;
+}
+
+
+/* -------------------------------------
+ * Media Queries
+ * ------------------------------------- */
+
+ /* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+  .card-portfolio {
+    /* margin: 0 -10px 10px; */
+  }
+}
+
