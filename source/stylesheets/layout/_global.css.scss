@@ -1,0 +1,24 @@
+html {
+  // Default size is 16px
+  font-size: 0.625 * 1em;
+}
+
+body {
+  background: #283E51; /* fallback for old browsers */
+  color: $gray-lighter;
+  padding-top: $navbar-height;
+  min-height: calc(100vh - 405px);
+
+  @media (min-width: $screen-md-min) {
+   /*  padding-bottom: 60px;
+      */  }
+}
+
+p {
+  font-size: 24px;
+  font-size: 2.4rem;
+
+  &.lead {
+    font-size: 24px;
+  }
+}
